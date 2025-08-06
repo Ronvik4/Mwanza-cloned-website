@@ -28,37 +28,39 @@
 </head>
 <body>
 
-  <!-- Top Language and Links Bar -->
-  <nav class="bg-dark text-white py-2">
-    <div class="container">
-      <div class="row align-items-center gy-2">
-
-        <!-- Language Selector -->
-        <div class="col-12 col-md-auto text-center text-md-start">
-          <select class="form-select form-select-sm bg-dark text-white border-0 w-auto mx-auto mx-md-0">
-            <option selected>Swahili</option>
-            <option>English</option>
-          </select>
-        </div>
-
-        <!-- Nav Links -->
-        <div class="col text-center ms-lg-5">
-          <a href="#" class="text-white text-decoration-none mx-2 small">Wasiliana Nasi</a>
-          <a href="#" class="text-white text-decoration-none mx-2 small">Maswali ya Mara kwa Mara</a>
-          <a href="#" class="text-white text-decoration-none mx-2 small">Barua pepe</a>
-          <a href="#" class="text-white text-decoration-none mx-2 small">Malalamiko</a>
-        </div>
-
-        <!-- Search Bar -->
-        <div class="col-12 col-md-auto">
-          <form class="d-flex justify-content-center justify-content-md-end">
-            <input type="text" class="form-control form-control-sm w-100 w-md-auto" placeholder="Search" />
-          </form>
-        </div>
-
-      </div>
+ <!-- Top Navbar (Black Background) -->
+<nav class="navbar navbar-dark bg-dark py-1">
+  <div class="container-fluid justify-content-end">
+    <div class="dropdown me-3">
+      <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        Swahili
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">English</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
+<!-- Secondary Navbar with Links -->
+<div class="bg-dark text-white py-1">
+  <div class="container d-flex justify-content-start flex-wrap">
+    <a href="#" class="text-white me-3 small">Wasiliana Nasi</a>
+    <a href="#" class="text-white me-3 small">Maswali ya Mara kwa Mara</a>
+    <a href="#" class="text-white me-3 small">Barua pepe</a>
+    <a href="#" class="text-white me-3 small">Malalamiko</a>
+  </div>
+</div>
+
+<!-- Search Bar Strip -->
+<div class="bg-secondary">
+  <div class="container py-2">
+    <form class="position-relative">
+      <input type="text" class="form-control w-100 ps-3 pe-5 rounded-0" placeholder="Search">
+      <i class="bi bi-search position-absolute" style="right: 15px; top: 50%; transform: translateY(-50%); color: #6c757d;"></i>
+    </form>
+  </div>
+</div>
 
   <!-- Banner Section -->
   <div class="container">
@@ -72,8 +74,8 @@
          alt="Coat of Arms" />
 
     <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
-      <h4 class="text-shadow mb-1"><small>Jamhuri ya Muungano wa Tanzania</small></h4>
-      <h5 class="text-shadow mb-1"><small>Ofisi ya Rais - Tawala za Mikoa na Serikali za Mitaa</small></h5>
+      <h4 class="text-shadow mb-0"><small>Jamhuri ya Muungano wa Tanzania</small></h4>
+      <h5 class="text-shadow mb-0"><small>Ofisi ya Rais - Tawala za Mikoa na Serikali za Mitaa</small></h5>
       <h2 class="fw-bold text-shadow mb-0"><small>Mkoa wa Mwanza</small></h2>
     </div>
   </div>
@@ -138,5 +140,6 @@
   </footer>
   -->
 
+  <button class="p-3 bg-light hover-bg-transparent">Hello there!</button>
 </body>
 </html>
