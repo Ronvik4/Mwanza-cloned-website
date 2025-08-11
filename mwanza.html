@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="sw">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home | Mwanza Region</title>
   <link rel="icon" href="coat.jpg" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  
+
   <style>
     .banner {
-        background: linear-gradient(to right, #024b20,#0295b6), url(1.jpg);
-        background-blend-mode: multiply;
-        background-size: cover;
-        background-size: cover;
-        color: white;
+      background: linear-gradient(to right, #024b20, #0295b6), url(1.jpg);
+      background-blend-mode: multiply;
+      background-size: cover;
+      background-size: cover;
+      color: white;
     }
 
     .rounded-top-left {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        background-color: #3498db;
-        color: white;
-        border-top-left-radius: 16px;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-        padding: 0px 0px;
-        font-size: 5px;
-        display: inline-flex;
-        align-items: center;
-        border: none;
-        box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
-        z-index: 10;
-        text-decoration: none;
-}
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: #3498db;
+      color: white;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      padding: 0px 0px;
+      font-size: 5px;
+      display: inline-flex;
+      align-items: center;
+      border: none;
+      box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+      z-index: 10;
+      text-decoration: none;
+    }
 
     .text-center {
-        font-size: smaller;
+      font-size: smaller;
     }
 
     .line-main {
-        border: 0.14rem solid #696666;
+      border: 0.14rem solid #696666;
     }
 
     .line-sub {
-        border: 0.4px solid #818080;
+      border: 0.4px solid #818080;
     }
 
     .post {
-        font-weight: bold;
+      font-weight: bold;
     }
 
     .navbar-toggler:hover {
-        background-color: #c2c5c4;
+      background-color: #c2c5c4;
 
     }
+
     .takwimu {
-       word-spacing: 4px;
+      word-spacing: 4px;
     }
 
     .dashbodi {
@@ -69,619 +71,755 @@
     }
   </style>
 </head>
+
 <body style="font-family: 'Times New Roman', Times, serif;">
 
   <!-- Top Navbar -->
-  <div class="bg-dark text-white py-2 px-3 d-flex justify-content-between align-items-center">
-    <div class="dropdown">
-        <button class="btn bg-white text-black dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-          Swahili
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <li><a class="dropdown-item" href="#">English</a></li>
-          <li><a class="dropdown-item" href="#">Swahili</a></li>
-        </ul>
+<div class="bg-dark text-white py-2 px-3">
+  <div class="container">
+
+    <!-- Navbar links & controls container -->
+    <div class="d-flex flex-column flex-md-column flex-lg-row align-items-center">
+
+      <!-- Small/medium: language selector centered at top -->
+      <div class="w-100 d-flex justify-content-center d-lg-none mb-2">
+        <select class="form-select form-select-sm" aria-label="Language selector" style="max-width: 90px;">
+          <option value="en">Swahili</option>
+          <option value="sw">English</option>
+        </select>
       </div>
 
-      <div class="container rounded-0 py-0 me-0">
-        <div class="container d-none d-md-block position-relative justify-content-end">
-          <small class="text-white">
+      <!-- Large screens: navbar links + language selector + search bar in one row -->
+      <div class="d-none d-lg-flex w-100 justify-content-between align-items-center">
+
+        <!-- Navbar links -->
+        <small class="text-white">
+          <a href="#" class="text-white text-decoration-none mx-2">Wasiliana Nasi</a> |
+          <a href="#" class="text-white text-decoration-none mx-2">Maswali ya Mara kwa Mara</a> |
+          <a href="#" class="text-white text-decoration-none mx-2">Barua pepe</a> |
+          <a href="#" class="text-white text-decoration-none mx-2">Malalamiko</a>
+        </small>
+
+        <!-- Right controls: language selector + search bar -->
+        <div class="d-flex align-items-center">
+
+          <!-- Language selector just before search bar -->
+          <div class="me-3">
+            <select class="form-select form-select-sm" aria-label="Language selector" style="max-width: 90px;">
+              <option value="en">Swahili</option>
+              <option value="sw">English</option>
+            </select>
+          </div>
+
+          <!-- Search bar -->
+          <div style="max-width: 250px;">
+            <div class="input-group input-group-sm">
+              <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                style="background-color: #476569; color: white;">
+              <span class="input-group-text text-white" style="background-color: #476569;">
+                <i class="bi bi-search"></i>
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Navbar links only on small/medium screens, centered below language selector -->
+      <div class="d-flex justify-content-center d-lg-none mt-2">
+        <small class="text-white text-center">
           <a href="#" class="text-white text-decoration-none mx-2">Wasiliana Nasi</a> |
           <a href="#" class="text-white text-decoration-none mx-2">Maswali ya Mara kwa Mara</a> |
           <a href="#" class="text-white text-decoration-none mx-2">Barua pepe</a> |
           <a href="#" class="text-white text-decoration-none mx-2">Malalamiko</a> |
-          </small>
-        </div>
+        </small>
+      </div>
+
     </div>
+
   </div>
+</div>
+
 
   <div class="container card cust-shad rounded-0 px-0 py-0">
     <!-- Search bar for small/medium screens -->
     <div class="bg-light pt-0 mb-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-auto ms-lg-auto">
-        <form class="position-relative ps-0 pt-0" role="search" style="max-width: 800px;">
-          <input class="form-control form-control-sm rounded-0 text fw-bold pe-5"
-                 type="search" 
-                 placeholder="Search" 
-                 style="background-color: #476569;">
-          <button type="submit" class="btn position-absolute top-0 end-0 h-100 p-0 border-0 bg-transparent">
-            <i class="bi bi-search"></i>
-          </button>
-        </form>
+      <div class="">
+        <div class="row">
+          <div class="col-12 col-lg-auto ms-lg-auto d-lg-none">
+            <form class="position-relative ps-0 pt-0" role="search" style="max-width: 800px;">
+              <input class="form-control form-control-sm rounded-0 text fw-bold pe-5" type="search" placeholder="Search"
+                style="background-color: #476569;">
+              <button type="submit" class="btn position-absolute top-0 end-0 h-100 p-0 border-0 bg-transparent">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
-   <!-- Banner Section -->
-<div class="banner position-relative d-flex align-items-center">
-  <!-- Left: Emblem -->
-  <img src="coat.jpg"
-       alt="Tanzania Emblem" class="img-fluid" style="max-height: 120px;">
+    <!-- Banner Section -->
+    <div class="banner position-relative d-flex align-items-center">
+      <!-- Left: Emblem -->
+      <img src="coat.jpg" alt="Tanzania Emblem" class="img-fluid" style="max-height: 120px;">
 
-  <!-- Center: Text -->
-  <div class="text-center flex-grow-1 mx-3">
-    <div class="mb-1">Jamhuri ya Muungano wa Tanzania</div>
-    <div class="mb-1">Ofisi ya Rais Tawala za Mikoa na Serikali za Mitaa</div>
-    <h2 class="fw-bold">Mkoa wa Mwanza</h2>
-  </div>
+      <!-- Center: Text -->
+      <div class="text-center flex-grow-1 mx-3">
+        <div class="mb-1">Jamhuri ya Muungano wa Tanzania</div>
+        <div class="mb-1">Ofisi ya Rais Tawala za Mikoa na Serikali za Mitaa</div>
+        <h2 class="fw-bold">Mkoa wa Mwanza</h2>
+      </div>
 
-  <!-- Right: Cotton Image -->
-  <div class="d-flex align-items-center ms-auto">
-    <img src="cotton.jpg" alt="Cotton" class="img-fluid d-none d-md-block" style="max-height: 120px;">
-  </div>
-</div>
+      <!-- Right: Cotton Image -->
+      <div class="d-flex align-items-center ms-auto">
+        <img src="cotton.jpg" alt="Cotton" class="img-fluid d-none d-md-block" style="max-height: 120px;">
+      </div>
+    </div>
     <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-success px-3">
-  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success px-3">
+      <div class="container-fluid">
 
-    <!-- Site name/logo for small screens (optional) -->
-    <a class="navbar-brand d-lg-none" href="#"></a>
+        <!-- Site name/logo for small screens (optional) -->
+        <a class="navbar-brand d-lg-none" href="#"></a>
 
-    <!-- Hamburger menu button (aligned right) -->
-    <button class="navbar-toggler ms-auto border-white rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <!-- Hamburger menu button (aligned right) -->
+        <button class="navbar-toggler ms-auto border-white rounded-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- Navigation links -->
-    <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
-      <ul class="navbar-nav align-items-start text-center">
-        <li class="nav-item"><a class="nav-link text-white" href="#">Mwanzo</a></li>
-        <div class="border-end d-none d-lg-block mx-2" style="height: 35px;"></div>
+        <!-- Navigation links -->
+        <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+          <ul class="navbar-nav align-items-start text-center">
+            <li class="nav-item"><a class="nav-link text-white" href="#">Mwanzo</a></li>
+            <div class="border-end d-none d-lg-block mx-2" style="height: 35px;"></div>
 
-        <li class="nav-item"><a class="nav-link text-white" href="#">Kuhusu sisi</a></li>
-        <div class="border-end d-none d-lg-block mx-2" style="height: 35px;"></div>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Kuhusu sisi</a></li>
+            <div class="border-end d-none d-lg-block mx-2" style="height: 35px;"></div>
 
-        <li class="nav-item"><a class="nav-link text-white" href="#">Utawala</a></li>
-        <div class="border-end d-none d-lg-block mx-2" style="height: 35px;"></div>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Utawala</a></li>
+            <div class="border-end d-none d-lg-block mx-2" style="height: 35px;"></div>
 
-        <li class="nav-item"><a class="nav-link text-white" href="#">Wilaya</a></li>
-        <div class="border-end d-none d-lg-block mx-2" style="height: 35px;"></div>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Wilaya</a></li>
+            <div class="border-end d-none d-lg-block mx-2" style="height: 35px;"></div>
 
-        <li class="nav-item"><a class="nav-link text-white" href="#">Halmashauri</a></li>
-        <div class="border-end d-none d-lg-block mx-2" style="height: 35px;"></div>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Halmashauri</a></li>
+            <div class="border-end d-none d-lg-block mx-2" style="height: 35px;"></div>
 
-        <li class="nav-item"><a class="nav-link text-white" href="#">Fursa za uwekezaji</a></li>
-        <div class="border-end d-none d-lg-block mx-2" style="height: 35px;"></div>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Fursa za uwekezaji</a></li>
+            <div class="border-end d-none d-lg-block mx-2" style="height: 35px;"></div>
 
-        <li class="nav-item"><a class="nav-link text-white" href="#">Huduma zetu</a></li>
-        <div class="border-end d-none d-lg-block mx-2" style="height: 35px;"></div>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Huduma zetu</a></li>
+            <div class="border-end d-none d-lg-block mx-2" style="height: 35px;"></div>
 
-        <li class="nav-item"><a class="nav-link text-white" href="#">Machapisho</a></li>
-        <div class="border-end d-none d-lg-block mx-2" style="height: 35px;"></div>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Machapisho</a></li>
+            <div class="border-end d-none d-lg-block mx-2" style="height: 35px;"></div>
 
-        <li class="nav-item"><a class="nav-link text-white" href="#">Kituo cha Habari</a></li>
-      </ul>
-    </div>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Kituo cha Habari</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
   </div>
-</nav>
 
-    </div>
-
-    <!-- A News section-->
-<div class="container cust-shad rounded-0 my-5 pt-3 ">
+  <!-- A News section-->
+  <div class="container cust-shad rounded-0 my-5 pt-3 ">
     <!-- Habari Mpya-->
     <div class="d-flex justify-content-between align-items-center py-2 mt-4">
-        <h4 class="mb-2 text-primary" style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">Habari Mpya</h4>
-        <a href="#" class="text-decoration-none">soma zaidi <i class="bi bi-caret-right-fill" style="font-size: xx-small;"></i></a>
+      <h4 class="mb-2 text-primary"
+        style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">
+        Habari Mpya</h4>
+      <a href="#" class="text-decoration-none">soma zaidi <i class="bi bi-caret-right-fill"
+          style="font-size: xx-small;"></i></a>
     </div>
     <hr class="line-main mt-1">
 
     <div class="row">
-        <!-- Image Column on Large Screens -->
-        <div class="col-md-4 col-lg-3">
-            <img src="cotton.jpg" class="img-fluid" alt="Article Image">
-        </div>
+      <!-- Image Column on Large Screens -->
+      <div class="col-md-4 col-lg-3">
+        <img src="cotton.jpg" class="img-fluid" alt="Article Image">
+      </div>
 
-        <div class="col-md-8 col-lg-9">
-            <p class="card-title">PAZIA LA MAONESHO YA NANENANE LAFUNGIWA RASMI KANDA YA ZIWA</p>
-            <p class="card-text post">Posted On: August 3rd, 2025</p>
-            <p class="card-text">Mkuu wa wilaya ya Geita Mhe. Hashimu Komba amewataka wananchi wa mikoa ya kanda ya ziwa kujitokeza kwa wingi kwa lengo la kujifunza na kupata mbinu mbalimbali za kilimo, ufugaji, uvuvi na b...</p>
-        </div>
+      <div class="col-md-8 col-lg-9">
+        <p class="card-title">PAZIA LA MAONESHO YA NANENANE LAFUNGIWA RASMI KANDA YA ZIWA</p>
+        <p class="card-text post">Posted On: August 3rd, 2025</p>
+        <p class="card-text">Mkuu wa wilaya ya Geita Mhe. Hashimu Komba amewataka wananchi wa mikoa ya kanda ya ziwa
+          kujitokeza kwa wingi kwa lengo la kujifunza na kupata mbinu mbalimbali za kilimo, ufugaji, uvuvi na b...</p>
+      </div>
     </div>
 
     <hr class="line-sub mt-3">
     <div class="card-body">
-        <p class="card-title">WAKULIMA WAASWA KUTUMIA TEKNOLOJIA KUFANYA KILIMO CHA KISASA</p>
-        <p class="card-text post">Posted On: August 2nd, 2025</p>
+      <p class="card-title">WAKULIMA WAASWA KUTUMIA TEKNOLOJIA KUFANYA KILIMO CHA KISASA</p>
+      <p class="card-text post">Posted On: August 2nd, 2025</p>
     </div>
 
     <hr class="line-sub mt-3">
     <div class="card-body">
-        <p class="card-title">RMO MWANZA AONGOZA ZIARA YA MAFUNZO YA USAFI NA MAZINGIRA MKOANI IRINGA</p>
-        <p class="card-text post">Posted On: July 21st, 2025</p>
+      <p class="card-title">RMO MWANZA AONGOZA ZIARA YA MAFUNZO YA USAFI NA MAZINGIRA MKOANI IRINGA</p>
+      <p class="card-text post">Posted On: July 21st, 2025</p>
     </div>
 
     <hr class="line-sub mt-3">
     <div class="card-body">
-        <p class="card-title">RAS BALANDYA ATOA MAAGIZO UTEKELEZAJI WA MIRADI SENGEREMA</p>
-        <p class="card-text post">Posted On: July 30th, 2025</p>
+      <p class="card-title">RAS BALANDYA ATOA MAAGIZO UTEKELEZAJI WA MIRADI SENGEREMA</p>
+      <p class="card-text post">Posted On: July 30th, 2025</p>
     </div>
 
     <!-- Matukio -->
     <div class="d-flex justify-content-between align-items-center py-2 mt-4">
-        <h4 class="mb-0 text-primary" style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">Matukio</h4>
-        <a href="#" class="text-decoration-none">soma zaidi <i class="bi bi-caret-right-fill" style="font-size: xx-small;"></i></a>
+      <h4 class="mb-0 text-primary"
+        style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">
+        Matukio</h4>
+      <a href="#" class="text-decoration-none">soma zaidi <i class="bi bi-caret-right-fill"
+          style="font-size: xx-small;"></i></a>
     </div>
     <hr class="line-main mt-1">
 
     <div class="d-flex align-items-start border-bottom py-2">
-        <div class="text-center me-3">
-            <div class="text-danger">Jul</div>
-            <div class="text-danger">07</div>
-        </div>
-        <div>
-            <div class="fw-bold">Sikukuu ya Sabasaba</div>
-            <small>July 07, 2025 - July 07, 2025 <br>12:00:am - 12:00:am</small>
-        </div>
+      <div class="text-center me-3">
+        <div class="text-danger">Jul</div>
+        <div class="text-danger">07</div>
+      </div>
+      <div>
+        <div class="fw-bold">Sikukuu ya Sabasaba</div>
+        <small>July 07, 2025 - July 07, 2025 <br>12:00:am - 12:00:am</small>
+      </div>
     </div>
 
     <div class="d-flex align-items-start border-bottom py-2">
-        <div class="text-center me-3">
-            <div class="text-danger">May</div>
-            <div class="text-danger">01</div>
-        </div>
-        <div>
-            <div class="fw-bold">Siku ya Wafanyakazi Duniani</div>
-            <small>May 01, 2025 - May 01, 2025<br>12:00:am - 12:00:am</small>
-        </div>
+      <div class="text-center me-3">
+        <div class="text-danger">May</div>
+        <div class="text-danger">01</div>
+      </div>
+      <div>
+        <div class="fw-bold">Siku ya Wafanyakazi Duniani</div>
+        <small>May 01, 2025 - May 01, 2025<br>12:00:am - 12:00:am</small>
+      </div>
     </div>
 
     <!-- Matangazo -->
     <div class="d-flex justify-content-between align-items-center py-2 mt-4">
-        <h4 class="mb-0 text-primary" style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">Matangazo</h4>
-        <a href="#" class="text-decoration-none">soma zaidi <i class="bi bi-caret-right-fill" style="font-size: xx-small;"></i></a>
+      <h4 class="mb-0 text-primary"
+        style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">
+        Matangazo</h4>
+      <a href="#" class="text-decoration-none">soma zaidi <i class="bi bi-caret-right-fill"
+          style="font-size: xx-small;"></i></a>
     </div>
     <hr class="line-main mt-1">
 
     <div class="py-2 border-bottom">
-        <span class="badge bg-danger me-2">1</span>
-        Tangazo la kukutana na Mhe. Mkuu wa Mkoa wa Mwanza kwa shida mbalimbali.
-        <div class="small ps-4 fw-bold text-black">- January 08, 2025</div>
+      <span class="badge bg-danger me-2">1</span>
+      Tangazo la kukutana na Mhe. Mkuu wa Mkoa wa Mwanza kwa shida mbalimbali.
+      <div class="small ps-4 fw-bold text-black">- January 08, 2025</div>
     </div>
 
     <div class="py-2 border-bottom">
-        <span class="badge bg-danger me-2">2</span>
-        TANGAZO LA NANENANE TAREHE 8.8.2025
-        <div class="small ps-4 fw-bold text-black">- January 08, 2025</div>
+      <span class="badge bg-danger me-2">2</span>
+      TANGAZO LA NANENANE TAREHE 8.8.2025
+      <div class="small ps-4 fw-bold text-black">- January 08, 2025</div>
     </div>
 
     <!-- Matangazo ya Biashara -->
     <div class="d-flex justify-content-between align-items-center py-2 mt-4">
-        <h4 class="mb-0 text-primary" style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">Matangazo ya Biashara</h4>
-        <a href="#" class="text-decoration-none">soma zaidi <i class="bi bi-caret-right-fill" style="font-size: xx-small;"></i></a>
+      <h4 class="mb-0 text-primary"
+        style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">
+        Matangazo ya Biashara</h4>
+      <a href="#" class="text-decoration-none">soma zaidi <i class="bi bi-caret-right-fill"
+          style="font-size: xx-small;"></i></a>
     </div>
     <hr class="line-main mt-1">
     <p class="mt-2">No records found</p>
 
     <!-- Zabuni -->
     <div class="d-flex justify-content-between align-items-center py-2 mt-2">
-        <h4 class="mb-0 text-primary" style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">Zabuni</h4>
-        <a href="#" class="text-decoration-none">soma zaidi <i class="bi bi-caret-right-fill" style="font-size: xx-small;"></i></a>
+      <h4 class="mb-0 text-primary"
+        style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">
+        Zabuni</h4>
+      <a href="#" class="text-decoration-none">soma zaidi <i class="bi bi-caret-right-fill"
+          style="font-size: xx-small;"></i></a>
     </div>
     <hr class="line-main mt-1">
 
     <div class="table-responsive mt-2">
-        <table class="table table-striped table-md">
-            <thead>
-                <tr>
-                    <th>Jina la Zabuni</th>
-                    <th>Date Added</th>
-                    <th>Expire Date</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>TASS L.T.D. S.L.P 1709 Mwanza</td>
-                    <td>January 11, 2018</td>
-                    <td>April 30, 2018</td>
-                    <td><a href="#" class="text-decoration-none">Pakua</a></td>
-                </tr>
-                <tr>
-                    <td>Philomena Catering Service <br> S.L.P 1364 Mwanza</td>
-                    <td>January 11, 2018</td>
-                    <td>March 03, 2018</td>
-                    <td><a href="#" class="text-decoration-none">Pakua</a></td>
-                </tr>
-            </tbody>
-        </table>
+      <table class="table table-striped table-md">
+        <thead>
+          <tr>
+            <th>Jina la Zabuni</th>
+            <th>Date Added</th>
+            <th>Expire Date</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TASS L.T.D. S.L.P 1709 Mwanza</td>
+            <td>January 11, 2018</td>
+            <td>April 30, 2018</td>
+            <td><a href="#" class="text-decoration-none">Pakua</a></td>
+          </tr>
+          <tr>
+            <td>Philomena Catering Service <br> S.L.P 1364 Mwanza</td>
+            <td>January 11, 2018</td>
+            <td>March 03, 2018</td>
+            <td><a href="#" class="text-decoration-none">Pakua</a></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <!-- From PO-RALG -->
     <div class="d-flex justify-content-between align-items-center py-2 mt-2">
-        <h4 class="mb-0 text-primary" style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">From PO-RALG</h4>
-        <a href="#" class="text-decoration-none">soma zaidi <i class="bi bi-caret-right-fill" style="font-size: xx-small;"></i></a>
+      <h4 class="mb-0 text-primary"
+        style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">
+        From PO-RALG</h4>
+      <a href="#" class="text-decoration-none">soma zaidi <i class="bi bi-caret-right-fill"
+          style="font-size: xx-small;"></i></a>
     </div>
     <hr class="line-main mt-1">
-    
+
     <div class="container-fluid card-img border-1">
-    <img src="haipo.jpg" alt="">
+      <img src="haipo.jpg" alt="">
     </div>
     <ul class="list-group list-group-flush mt-2">
-        <li class="list-group-item"><a href="#" class="text-decoration-none text-black">MIAKA 60 YA JAMHURI YA MUUNGANO WA TANZANIA</a></li>
-        <li class="list-group-item">[<a href="#" class="text-decoration-none text-black">Video] Mfumo wa Mikopo ya 10% - Namna ya Kujisajili</a></li>
-        <li class="list-group-item"><a href="#" class="text-decoration-none text-black">MWONGOZO WA UTEKELEZAJI WA MPANGO WA RUZUKU YA MBOLEA KWA MSIMU WA 2022/2023</a></li>
-        <li class="list-group-item"><a href="#" class="text-decoration-none text-black">Mpango wa Maendeleo kw Ustawi wa Taifa Ofifi ya Rais - TAMISEMI</a></li>
-        <li class="list-group-item">[<a href="#" class="text-decoration-none text-black">Video] TAMISEMI YAPEWA BILIONI 536.6 FEDHA ZA MAPAMBANO DHIDI YA UVIKO 19</a></li>
+      <li class="list-group-item"><a href="#" class="text-decoration-none text-black">MIAKA 60 YA JAMHURI YA MUUNGANO WA
+          TANZANIA</a></li>
+      <li class="list-group-item">[<a href="#" class="text-decoration-none text-black">Video] Mfumo wa Mikopo ya 10% -
+          Namna ya Kujisajili</a></li>
+      <li class="list-group-item"><a href="#" class="text-decoration-none text-black">MWONGOZO WA UTEKELEZAJI WA MPANGO
+          WA RUZUKU YA MBOLEA KWA MSIMU WA 2022/2023</a></li>
+      <li class="list-group-item"><a href="#" class="text-decoration-none text-black">Mpango wa Maendeleo kw Ustawi wa
+          Taifa Ofifi ya Rais - TAMISEMI</a></li>
+      <li class="list-group-item">[<a href="#" class="text-decoration-none text-black">Video] TAMISEMI YAPEWA BILIONI
+          536.6 FEDHA ZA MAPAMBANO DHIDI YA UVIKO 19</a></li>
     </ul>
 
     <!--Dashibodi-->
     <div class="d-flex justify-content-between align-items-center py-2 mt-2">
-        <h4 class="mb-0 text-primary" style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">Dashibodi</h4>
+      <h4 class="mb-0 text-primary"
+        style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">
+        Dashibodi</h4>
     </div>
     <hr class="line-main mt-1">
 
     <ul class="list-group list-group-flush mt-2 p-3 dashbodi">
       <small style="list-style: none;">
-      <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i><a href="#" class="text-decoration-none text-primary">  OFISI MTANDAO</a></li>
-      <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i><a href="#" class="text-decoration-none text-primary">  Basic Education Management Information System (BEMIS)</a></li>
-      <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i><a href="#" class="text-decoration-none text-primary">  Health Dashboard</a></li>
-      <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i><a href="#" class="text-decoration-none text-primary">  Water Dashboard</a></li>
-      <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i><a href="#" class="text-decoration-none text-primary">  Tanzania Schools Information System</a></li>
-      <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i><a href="#" class="text-decoration-none text-primary">  HMIS Web portal</a></li>
-      <a href="#" class="text-decoration-none text-primary">More Dashboards   <i class="bi bi-caret-right-fill" style="font-size: xx-small;"></i></a>
+        <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i><a href="#"
+            class="text-decoration-none text-primary"> OFISI MTANDAO</a></li>
+        <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i><a href="#"
+            class="text-decoration-none text-primary"> Basic Education Management Information System (BEMIS)</a></li>
+        <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i><a href="#"
+            class="text-decoration-none text-primary"> Health Dashboard</a></li>
+        <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i><a href="#"
+            class="text-decoration-none text-primary"> Water Dashboard</a></li>
+        <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i><a href="#"
+            class="text-decoration-none text-primary"> Tanzania Schools Information System</a></li>
+        <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i><a href="#"
+            class="text-decoration-none text-primary"> HMIS Web portal</a></li>
+        <a href="#" class="text-decoration-none text-primary">More Dashboards <i class="bi bi-caret-right-fill"
+            style="font-size: xx-small;"></i></a>
       </small>
     </ul>
 
     <!-- Takwimu -->
     <div class="d-flex justify-content-between align-items-center py-2 mt-2">
-        <h4 class="mb-0 text-primary" style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">Takwimu</h4>
+      <h4 class="mb-0 text-primary"
+        style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">
+        Takwimu</h4>
     </div>
     <hr class="line-main mt-1">
 
     <ul class="list-group list-group-flush mt-2 p-3">
       <small class="takwimu" style="list-style: none;">
-        <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i>  Makadirio ya Idadi ya Watu (NBS) = 3,217,328</li>
-        <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i>  Tarafa = 24</li>
-        <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i>  Kata = 191</li>
-        <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i>  Vijiji = 544</li>
-        <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i>  Vitongoji = 3446</li>
-        <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i>  Mitaa = 346</li>
-        <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i>  Shule za Msingi = 914</li>
+        <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i> Makadirio ya Idadi
+          ya Watu (NBS) = 3,217,328</li>
+        <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i> Tarafa = 24</li>
+        <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i> Kata = 191</li>
+        <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i> Vijiji = 544</li>
+        <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i> Vitongoji = 3446
+        </li>
+        <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i> Mitaa = 346</li>
+        <li class="list-item"><i class="bi bi-chevron-double-right" style="font-size: xx-small;"></i> Shule za Msingi =
+          914</li>
         <a href="#" class="text-decoration-none text-primary">takwimu nyingine</a>
       </small>
     </ul>
-</div>
+  </div>
 
-<!-- The dependent cards section -->
+  <!-- The dependent cards section -->
 
-<div class="container py-4">
-  <div class="row g-xl-3">
+  <div class="container py-4">
+    <div class="row g-xl-3">
 
-    <!-- Miradi na Uwekezaji -->
-    <div class="col col-12 col-sm-6 col-lg-3 position-relative cust-shad">
-      <div class="h-100 d-flex flex-column">
+      <!-- Miradi na Uwekezaji -->
+      <div class="col col-12 col-sm-6 col-lg-3 position-relative cust-shad">
+        <div class="h-100 d-flex flex-column">
 
-        <!-- Header -->
-        <div class="d-flex justify-content-between align-items-center py-2 mt-2">
-      <h4 class="mb-0 mx-2 text-primary" style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">
-        Miradi na Uwekezaji
-      </h4>
-    </div>
-    <hr class="line-main mt-1">
+          <!-- Header -->
+          <div class="d-flex justify-content-between align-items-center py-2 mt-2">
+            <h4 class="mb-0 mx-2 text-primary"
+              style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">
+              Miradi na Uwekezaji
+            </h4>
+          </div>
+          <hr class="line-main mt-1">
 
-    <!-- Card Body -->
-        <div class="card-body d-flex flex-column flex-grow-1">
-          <ul class="list-unstyled">
-          <small>
-            <li class="list-item"><a href="#" class="text-decoration-none text-black"><i class="bi bi-file-earmark-text"></i>  MRADI WA MAJI BUTIMBA</a><br><p class="ms-4"> 2021-07-21 --- 2023-10-31</p></li>
-            <li class="list-item"><a href="#" class="text-decoration-none text-black"><i class="bi bi-file-earmark-text"></i>  JENGO LA ABIRIA - AIRPORT MWANZA</a><br><p class="ms-4"> 2023-07-13 --- 2024-07-13</p></li>
-            <li class="list-item"><a href="#" class="text-decoration-none text-black"><i class="bi bi-file-earmark-text"></i>  SHULE YA SEKONDARI - SEQUIP</a><br><p class="ms-4"> 2023-07-01 --- 2023-10-01</p></li>
-            <li class="list-item"><a href="#" class="text-decoration-none text-black"><i class="bi bi-file-earmark-text"></i>  SHULE YA MSINGI - BOOST</a><br><p class="ms-4"> 2023-07-01 --- 2023-10-01</p></li>
-            <li class="list-item"><a href="#" class="text-decoration-none text-black"><i class="bi bi-file-earmark-text"></i>  JENDO LA KUHIFADHIA MAITI KATIKA HOSPITALI YA WILAYA NYAMAGANA</a><br><p class="ms-4"> 2022-07-01 --- 2023-07-01</p></li>
-            <li class="list-item"><a href="#" class="text-decoration-none text-black"><i class="bi bi-file-earmark-text"></i>  MELI YA MV MWANZA HAPA KAZI TU</a><br><p class="ms-4"> 2019-11-01 --- 2021-10-01</p></li>
-          </small>
-        </ul>
+          <!-- Card Body -->
+          <div class="card-body d-flex flex-column flex-grow-1">
+            <ul class="list-unstyled">
+              <small>
+                <li class="list-item"><a href="#" class="text-decoration-none text-black"><i
+                      class="bi bi-file-earmark-text"></i> MRADI WA MAJI BUTIMBA</a><br>
+                  <p class="ms-4"> 2021-07-21 --- 2023-10-31</p>
+                </li>
+                <li class="list-item"><a href="#" class="text-decoration-none text-black"><i
+                      class="bi bi-file-earmark-text"></i> JENGO LA ABIRIA - AIRPORT MWANZA</a><br>
+                  <p class="ms-4"> 2023-07-13 --- 2024-07-13</p>
+                </li>
+                <li class="list-item"><a href="#" class="text-decoration-none text-black"><i
+                      class="bi bi-file-earmark-text"></i> SHULE YA SEKONDARI - SEQUIP</a><br>
+                  <p class="ms-4"> 2023-07-01 --- 2023-10-01</p>
+                </li>
+                <li class="list-item"><a href="#" class="text-decoration-none text-black"><i
+                      class="bi bi-file-earmark-text"></i> SHULE YA MSINGI - BOOST</a><br>
+                  <p class="ms-4"> 2023-07-01 --- 2023-10-01</p>
+                </li>
+                <li class="list-item"><a href="#" class="text-decoration-none text-black"><i
+                      class="bi bi-file-earmark-text"></i> JENDO LA KUHIFADHIA MAITI KATIKA HOSPITALI YA WILAYA
+                    NYAMAGANA</a><br>
+                  <p class="ms-4"> 2022-07-01 --- 2023-07-01</p>
+                </li>
+                <li class="list-item"><a href="#" class="text-decoration-none text-black"><i
+                      class="bi bi-file-earmark-text"></i> MELI YA MV MWANZA HAPA KAZI TU</a><br>
+                  <p class="ms-4"> 2019-11-01 --- 2021-10-01</p>
+                </li>
+              </small>
+            </ul>
 
-        <!-- Button aligned at the bottom-right -->
-      <div class="mt-auto text-end rounded-top-left">
-        <button class="btn d-inline-flex align-items-center text-white">
-          <i class="bi bi-search me-2"></i> Angalia zote
-        </button>
+            <!-- Button aligned at the bottom-right -->
+            <div class="mt-auto text-end rounded-top-left">
+              <button class="btn d-inline-flex align-items-center text-white">
+                <i class="bi bi-search me-2"></i> Angalia zote
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- Nyaraka -->
+      <div class="col col-12 col-sm-6 col-lg-3 position-relative cust-shad">
+        <div class="h-100 d-flex flex-column">
+
+          <!-- Header -->
+          <div class="d-flex justify-content-between align-items-center py-2 mt-2">
+            <h4 class="mb-0 mx-2 text-primary"
+              style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">
+              Nyaraka
+            </h4>
+          </div>
+          <hr class="line-main mt-1">
+
+          <!-- Card Body -->
+          <div class="card-body d-flex flex-column flex-grow-1">
+            <ul class="list-unstyled">
+              <small>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i
+                      class="bi bi-file-earmark-text me-2"></i>
+                    <span>Mwongozo wa Matumizi Bora, Sahihi na Salama ya Vifaa na Mifumo ya TEHAMA Serikalini wa
+                      2022</span></a></li>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i
+                      class="bi bi-file-earmark-text me-2"></i>
+                    <span>Mwongozo wa Matumizi Bora, Sahihi na Salama ya Vifaa na Mifumo ya TEHAMA Serikalini wa
+                      2012</span></a></li>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i
+                      class="bi bi-file-earmark-text me-2"></i>
+                    <span>Utawala wa Kidemokrasia ngazi ya mtaa</span></a></li>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i
+                      class="bi bi-file-earmark-text me-2"></i>
+                    <span>Taarifa na Maarifa ya Uendeshaji wa Halmashauri za Mitaa</span></a></li>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i
+                      class="bi bi-file-earmark-text me-2"></i>
+                    <span>Utaratibu wa Kushughulikia Malalamiko Serikalini</span></a></li>
+              </small>
+            </ul>
+
+            <!-- Button aligned at the bottom-right -->
+            <div class="mt-auto text-end rounded-top-left">
+              <button class="btn d-inline-flex align-items-center text-white">
+                <i class="bi bi-search me-2"></i> Angalia zote
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Nifanyeje -->
+      <div class="col col-12 col-sm-6 col-lg-3 position-relative cust-shad">
+        <div class="h-100 d-flex flex-column">
+
+          <!-- Header -->
+          <div class="d-flex justify-content-between align-items-center py-2 mt-2">
+            <h4 class="mb-0 mx-2 text-primary"
+              style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">
+              Nifanyeje
+            </h4>
+          </div>
+          <hr class="line-main mt-1">
+
+          <!-- Card Body -->
+          <div class="card-body d-flex flex-column flex-grow-1">
+            <ul class="list-unstyled">
+              <small>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1"
+                      style="font-size: xx-small;"></i>
+                    <span>Kupata Leseni ya Biashara</span></a></li>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1"
+                      style="font-size: xx-small;"></i>
+                    <span>Kulipia Ardhi</span></a></li>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1"
+                      style="font-size: xx-small;"></i>
+                    <span>Kupata Vibali vya Ujenzi</span></a></li>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1"
+                      style="font-size: xx-small;"></i>
+                    <span>Kupimiwa viwanja au Mashamba</span></a></li>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1"
+                      style="font-size: xx-small;"></i>
+                    <span>Kibali cha uhamisho kutoka kwa Katibu Tawala Mkoa kwenda TAMISEMI</span></a></li>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1"
+                      style="font-size: xx-small;"></i>
+                    <span>Kufika Ofisi ya Mkuu wa Mkoa</span></a></li>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1"
+                      style="font-size: xx-small;"></i>
+                    <span>Kupata Salary Slip</span></a></li>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1"
+                      style="font-size: xx-small;"></i>
+                    <span>Kupata hotuba za Mh. Mkuu wa Mkoa?</span></a></li>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1"
+                      style="font-size: xx-small;"></i>
+                    <span>Kuangalia Matokeo ya Kidato cha nne 2016</span></a></li>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1"
+                      style="font-size: xx-small;"></i>
+                    <span>Kumuona Mkuu wa Mkoa</span></a></li>
+              </small>
+            </ul>
+
+            <!-- Button aligned at the bottom-right -->
+            <div class="mt-auto text-end rounded-top-left">
+              <button class="btn d-inline-flex align-items-center text-white">
+                <i class="bi bi-search me-2"></i> Angalia zote
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shughuli za Kiuchumi -->
+      <div class="col col-12 col-sm-6 col-lg-3 position-relative cust-shad">
+        <div class="h-100 d-flex flex-column">
+
+          <!-- Header -->
+          <div class="d-flex justify-content-between align-items-center py-2 mt-2">
+            <h4 class="mb-0 mx-2 text-primary"
+              style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">
+              Shughuli za Kiuchumi
+            </h4>
+          </div>
+          <hr class="line-main mt-1">
+
+          <!-- Card Body -->
+          <div class="card-body d-flex flex-column flex-grow-1">
+            <ul class="list-unstyled">
+              <small>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1"
+                      style="font-size: xx-small;"></i>
+                    <span>Sekta ya Biashara na Viwanda</span></a></li>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1"
+                      style="font-size: xx-small;"></i>
+                    <span>Usafirishaji</span></a></li>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1"
+                      style="font-size: xx-small;"></i>
+                    <span>Uvuvi</span></a></li>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1"
+                      style="font-size: xx-small;"></i>
+                    <span>Mifugo</span></a></li>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1"
+                      style="font-size: xx-small;"></i>
+                    <span>Maliasili na Utalii</span></a></li>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1"
+                      style="font-size: xx-small;"></i>
+                    <span>Madini</span></a></li>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1"
+                      style="font-size: xx-small;"></i>
+                    <span>Ufugaji wa Nyuki</span></a></li>
+                <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1"
+                      style="font-size: xx-small;"></i>
+                    <span>Kilimo</span></a></li>
+              </small>
+            </ul>
+
+            <!-- Button aligned at the bottom-right -->
+            <div class="mt-auto text-end rounded-top-left">
+              <button class="btn d-inline-flex align-items-center text-white">
+                <i class="bi bi-search me-2"></i> Angalia zote
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Nyaraka -->
-<div class="col col-12 col-sm-6 col-lg-3 position-relative cust-shad">
-  <div class="h-100 d-flex flex-column">
-    
-    <!-- Header -->
-    <div class="d-flex justify-content-between align-items-center py-2 mt-2">
-      <h4 class="mb-0 mx-2 text-primary" style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">
-        Nyaraka
-      </h4>
-    </div>
-    <hr class="line-main mt-1">
-
-    <!-- Card Body -->
-    <div class="card-body d-flex flex-column flex-grow-1">
-      <ul class="list-unstyled">
-        <small>
-          <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-file-earmark-text me-2"></i>
-            <span>Mwongozo wa Matumizi Bora, Sahihi na Salama ya Vifaa na Mifumo ya TEHAMA Serikalini wa 2022</span></a></li>
-          <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-file-earmark-text me-2"></i>
-            <span>Mwongozo wa Matumizi Bora, Sahihi na Salama ya Vifaa na Mifumo ya TEHAMA Serikalini wa 2012</span></a></li>
-            <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-file-earmark-text me-2"></i>
-            <span>Utawala wa Kidemokrasia ngazi ya mtaa</span></a></li>
-            <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-file-earmark-text me-2"></i>
-            <span>Taarifa na Maarifa ya Uendeshaji wa Halmashauri za Mitaa</span></a></li>
-            <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-file-earmark-text me-2"></i>
-            <span>Utaratibu wa Kushughulikia Malalamiko Serikalini</span></a></li>
-        </small>
-      </ul>
-
-      <!-- Button aligned at the bottom-right -->
-      <div class="mt-auto text-end rounded-top-left">
-        <button class="btn d-inline-flex align-items-center text-white">
-          <i class="bi bi-search me-2"></i> Angalia zote
-        </button>
+    <!-- Second Row -->
+    <div class="row g-3 mt-3 position-relative cust-shad">
+      <!-- Video -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="">
+          <h6 class="card-header">Video zinazotembea</h6>
+          <div class="card-body">
+            <div class="ratio ratio-1x1 mb-2">
+              <iframe src="https://www.youtube.com/embed/" allowfullscreen></iframe>
+            </div>
+            <small>
+              <p>Siku 365 za Mhe. Rais Samia Suluhu Hassan Mwanza</p>
+            </small>
+            <a href="#" class="text-decoration-none">video zaidi</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
+      <!-- Viunganishi vya Haraka -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="ms-4">
+          <h5 class="card-header mb-3">Viunganishi vya Haraka</h5>
+          <div class="card-body">
+            <ul class="list-group list-group-flush small">
+              <li class="list-group-item"><a href="#" class="text-decoration-none text-black"> Fomu ya Ugonjwa</a></li>
+              <li class="list-group-item"><a href="#" class="text-decoration-none text-black"> FFARS User Guidelines</a>
+              </li>
+              <li class="list-group-item"><a href="#" class="text-decoration-none text-black"> Miongozo ya mfumo wa
+                  bajeti na Mipango</a></li>
+              <li class="list-group-item"><a href="#" class="text-decoration-none text-black"> Makusanyo ya Ndani ya
+                  Halmashauri za Mkoa wa Mwanza</a></li>
+              <li class="list-group-item"><a href="#" class="text-decoration-none text-black"> PReM</a></li>
+              <li class="list-group-item"><a href="#" class="text-decoration-none text-black"> Maswali Yaulizwayo Mara
+                  kwa Mara</a></li>
+              <li class="list-group-item"><a href="#" class="text-decoration-none text-black"> Opras fomu</a></li>
+              <li class="list-group-item"><a href="#" class="text-decoration-none text-black"> OFISI MTANDAO</a></li>
+            </ul>
+          </div>
+        </div>
 
-    <!-- Nifanyeje -->
-    <div class="col col-12 col-sm-6 col-lg-3 position-relative cust-shad">
-  <div class="h-100 d-flex flex-column">
-    
-    <!-- Header -->
-    <div class="d-flex justify-content-between align-items-center py-2 mt-2">
-      <h4 class="mb-0 mx-2 text-primary" style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">
-        Nifanyeje
-      </h4>
-    </div>
-    <hr class="line-main mt-1">
+        <div class="ms-4">
+          <h5 class="card-header mb-3">Viunganishi Linganishi</h5>
+          <div class="card-body">
+            <ul class="list-group list-group-flush small">
+              <li class="list-group-item"><a href="#" class="text-decoration-none text-black"> Tovuti ya Ikulu</a></li>
+              <li class="list-group-item"><a href="#" class="text-decoration-none text-black"> Utumishi</a></li>
+              <li class="list-group-item"><a href="#" class="text-decoration-none text-black"> Tamisemi</a></li>
+              <li class="list-group-item"><a href="#" class="text-decoration-none text-black"> Ofisi ya Taifa ya Takwimu
+                  Tanzania</a></li>
+              <li class="list-group-item"><a href="#" class="text-decoration-none text-black"> Idara ya Habari
+                  Maelezo</a></li>
+              <li class="list-group-item"><a href="#" class="text-decoration-none text-black"> Tovuti Kuu ya
+                  Serikali</a></li>
+            </ul>
+          </div>
+        </div>
 
-    <!-- Card Body -->
-    <div class="card-body d-flex flex-column flex-grow-1">
-      <ul class="list-unstyled">
-        <small>
-          <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1" style="font-size: xx-small;"></i>
-            <span>Kupata Leseni ya Biashara</span></a></li>
-          <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1" style="font-size: xx-small;"></i>
-            <span>Kulipia Ardhi</span></a></li>
-            <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1" style="font-size: xx-small;"></i>
-            <span>Kupata Vibali vya Ujenzi</span></a></li>
-            <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1" style="font-size: xx-small;"></i>
-            <span>Kupimiwa viwanja au Mashamba</span></a></li>
-            <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1" style="font-size: xx-small;"></i>
-            <span>Kibali cha uhamisho kutoka kwa Katibu Tawala Mkoa kwenda TAMISEMI</span></a></li>
-            <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1" style="font-size: xx-small;"></i>
-            <span>Kufika Ofisi ya Mkuu wa Mkoa</span></a></li>
-            <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1" style="font-size: xx-small;"></i>
-            <span>Kupata Salary Slip</span></a></li>
-            <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1" style="font-size: xx-small;"></i>
-            <span>Kupata hotuba za Mh. Mkuu wa Mkoa?</span></a></li>
-            <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1" style="font-size: xx-small;"></i>
-            <span>Kuangalia Matokeo ya Kidato cha nne 2016</span></a></li>
-            <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1" style="font-size: xx-small;"></i>
-            <span>Kumuona Mkuu wa Mkoa</span></a></li>
-        </small>
-      </ul>
+        <!-- Watembeleaji -->
+        <div class="mt-3">
+          <h5 class="card-header mb-3">Watembealeaji</h5>
+          <div class="card-body">
+            <img src="tzs.jpg" alt="" class="img-fluid mb-2" style="width: 100%;">
+          </div>
+        </div>
 
-      <!-- Button aligned at the bottom-right -->
-      <div class="mt-auto text-end rounded-top-left">
-        <button class="btn d-inline-flex align-items-center text-white">
-          <i class="bi bi-search me-2"></i> Angalia zote
-        </button>
+        <!-- Idadi ya Wasomaji -->
+        <div class="mt-3">
+          <h5 class="card-header mb-3">Idadi ya Wasomaji</h5>
+          <a href="#" class="text-decoration-none">wrtingMasterThesis</a>
+          <div class="card-body d-flex justify-content-start">
+            <table class="table table-bordered w-75 rounded">
+              <thead class="table-light">
+                <tr>
+                  <th class="text-center" colspan="2">Visitor Counter</th>
+                </tr>
+              </thead>
+              <tbody class="table-group-divider">
+                <tr>
+                  <td>Today</td>
+                  <td>174</td>
+                </tr>
+                <tr>
+                  <td>Yesterday</td>
+                  <td>361</td>
+                </tr>
+                <tr>
+                  <td>All</td>
+                  <td>488460</td>
+                </tr>
+                <tr>
+                  <td>Online</td>
+                  <td>8</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
-    <!-- Shughuli za Kiuchumi -->
-    <div class="col col-12 col-sm-6 col-lg-3 position-relative cust-shad">
-  <div class="h-100 d-flex flex-column">
-    
-    <!-- Header -->
-    <div class="d-flex justify-content-between align-items-center py-2 mt-2">
-      <h4 class="mb-0 mx-2 text-primary" style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">
-        Shughuli za Kiuchumi
-      </h4>
-    </div>
-    <hr class="line-main mt-1">
-
-    <!-- Card Body -->
-    <div class="card-body d-flex flex-column flex-grow-1">
-      <ul class="list-unstyled">
-        <small>
-          <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1" style="font-size: xx-small;"></i>
-            <span>Sekta ya Biashara na Viwanda</span></a></li>
-            <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1" style="font-size: xx-small;"></i>
-            <span>Usafirishaji</span></a></li>
-            <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1" style="font-size: xx-small;"></i>
-            <span>Uvuvi</span></a></li>
-            <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1" style="font-size: xx-small;"></i>
-            <span>Mifugo</span></a></li>
-            <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1" style="font-size: xx-small;"></i>
-            <span>Maliasili na Utalii</span></a></li>
-            <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1" style="font-size: xx-small;"></i>
-            <span>Madini</span></a></li>
-            <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1" style="font-size: xx-small;"></i>
-            <span>Ufugaji wa Nyuki</span></a></li>
-            <li><a href="#" class="text-decoration-none text-black d-flex"><i class="bi bi-chevron-right py-1" style="font-size: xx-small;"></i>
-            <span>Kilimo</span></a></li>
-        </small>
-      </ul>
-
-      <!-- Button aligned at the bottom-right -->
-      <div class="mt-auto text-end rounded-top-left">
-        <button class="btn d-inline-flex align-items-center text-white">
-          <i class="bi bi-search me-2"></i> Angalia zote
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-  </div>
-
-  <!-- Second Row -->
-  <div class="row g-3 mt-3 position-relative cust-shad">
-    <!-- Video -->
-    <div class="col-12 col-sm-6 col-lg-3">
+      <!-- Ramani na Mawasiliano -->
       <div class="">
-        <h6 class="card-header">Video zinazotembea</h6>
-        <div class="card-body">
-          <div class="ratio ratio-1x1 mb-2">
-            <iframe src="https://www.youtube.com/embed/" allowfullscreen></iframe>
-          </div>
-          <small><p>Siku 365 za Mhe. Rais Samia Suluhu Hassan Mwanza</p></small>
-          <a href="#" class="text-decoration-none">video zaidi</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Viunganishi vya Haraka -->
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="ms-4">
-        <h5 class="card-header mb-3">Viunganishi vya Haraka</h5>
-        <div class="card-body">
-          <ul class="list-group list-group-flush small">
-            <li class="list-group-item"><a href="#" class="text-decoration-none text-black">  Fomu ya Ugonjwa</a></li>
-            <li class="list-group-item"><a href="#" class="text-decoration-none text-black">  FFARS User Guidelines</a></li>
-            <li class="list-group-item"><a href="#" class="text-decoration-none text-black">  Miongozo ya mfumo wa bajeti na Mipango</a></li>
-            <li class="list-group-item"><a href="#" class="text-decoration-none text-black">  Makusanyo ya Ndani ya Halmashauri za Mkoa wa Mwanza</a></li>
-            <li class="list-group-item"><a href="#" class="text-decoration-none text-black">  PReM</a></li>
-            <li class="list-group-item"><a href="#" class="text-decoration-none text-black">  Maswali Yaulizwayo Mara kwa Mara</a></li>
-            <li class="list-group-item"><a href="#" class="text-decoration-none text-black">  Opras fomu</a></li>
-            <li class="list-group-item"><a href="#" class="text-decoration-none text-black">  OFISI MTANDAO</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="ms-4">
-        <h5 class="card-header mb-3">Viunganishi Linganishi</h5>
-        <div class="card-body">
-          <ul class="list-group list-group-flush small">
-            <li class="list-group-item"><a href="#" class="text-decoration-none text-black">  Tovuti ya Ikulu</a></li>
-            <li class="list-group-item"><a href="#" class="text-decoration-none text-black">  Utumishi</a></li>
-            <li class="list-group-item"><a href="#" class="text-decoration-none text-black">  Tamisemi</a></li>
-            <li class="list-group-item"><a href="#" class="text-decoration-none text-black">  Ofisi ya Taifa ya Takwimu Tanzania</a></li>
-            <li class="list-group-item"><a href="#" class="text-decoration-none text-black">  Idara ya Habari Maelezo</a></li>
-            <li class="list-group-item"><a href="#" class="text-decoration-none text-black">  Tovuti Kuu ya Serikali</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Watembeleaji -->
-      <div class="mt-3">
-        <h5 class="card-header mb-3">Watembealeaji</h5>
-        <div class="card-body">
-          <img src="tzs.jpg" alt="" class="img-fluid mb-2" style="width: 100%;">
-        </div>
-      </div>
-
-      <!-- Idadi ya Wasomaji -->
-       <div class="mt-3">
-        <h5 class="card-header mb-3">Idadi ya Wasomaji</h5>
-        <a href="#" class="text-decoration-none">wrtingMasterThesis</a>
-        <div class="card-body d-flex justify-content-start">
-  <table class="table table-bordered w-75 rounded">
-    <thead class="table-light">
-      <tr>
-        <th class="text-center" colspan="2">Visitor Counter</th>
-      </tr>
-    </thead>
-    <tbody class="table-group-divider">
-      <tr>
-        <td>Today</td>
-        <td>174</td>
-      </tr>
-      <tr>
-        <td>Yesterday</td>
-        <td>361</td>
-      </tr>
-      <tr>
-        <td>All</td>
-        <td>488460</td>
-      </tr>
-      <tr>
-        <td>Online</td>
-        <td>8</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-       </div>
-    </div>
-
-    <!-- Ramani na Mawasiliano -->
-    <div class="">
-      <div class="h-100">
-        <h5 class="card-header mb-3">Ramani ya Eneo</h5>
-        <div class="card-body">
-          <a href="https://www.google.com/maps/place/Mwanza,+Tanzania/" target="_blank" rel="noopener noreferrer">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127709.61532490917!2d32.968168!3d-2.5152905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dd6e9bc1b3e78f%3A0x1b76e5b34ecf1963!2sMwanza%2C%20Tanzania!5e0!3m2!1sen!2stz!4v1599653142341!5m2!1sen!2stz" 
-                width="100%" 
-                height="300" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
+        <div class="h-100">
+          <h5 class="card-header mb-3">Ramani ya Eneo</h5>
+          <div class="card-body">
+            <a href="https://www.google.com/maps/place/Mwanza,+Tanzania/" target="_blank" rel="noopener noreferrer">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127709.61532490917!2d32.968168!3d-2.5152905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dd6e9bc1b3e78f%3A0x1b76e5b34ecf1963!2sMwanza%2C%20Tanzania!5e0!3m2!1sen!2stz!4v1599653142341!5m2!1sen!2stz"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </a>
-          <h5>Wasiliana Nasi</h5>
-          <p>
-            Ofisi ya Mkuu wa Mkoa wa Mwanza, 2 Regional Drive<br>
-            <strong>S.L.P:</strong> 119, Mwanza.<br>
-            <strong>Simu:</strong> 028-2501037<br>
-            <strong>Simu ya Mkoni:</strong> 028-2501037<br>
-            <strong>Barua Pepe:</strong> ras@mwanza.go.tz
-          </p>
-          <p>
-            <a href="#" class="text-decoration-none">Mawasiliano Mengine <i class="bi bi-caret-right-fill" style="font-size: xx-small;"></i></a>
-          </p>
-          <div>
-            <a href="#"><i class="bi bi-facebook fs-2"></i></a>
-            <a href="#"><i class="bi bi-twitter fs-2"></i></a>
-            <a href="#"><i class="bi bi-youtube fs-2"></i></a>
-            <a href="#"><i class="bi bi-discord fs-2"></i></a>
-            <a href="#"><i class="bi bi-instagram fs-2"></i></a>
+              </iframe>
+            </a>
+            <h5>Wasiliana Nasi</h5>
+            <p>
+              Ofisi ya Mkuu wa Mkoa wa Mwanza, 2 Regional Drive<br>
+              <strong>S.L.P:</strong> 119, Mwanza.<br>
+              <strong>Simu:</strong> 028-2501037<br>
+              <strong>Simu ya Mkoni:</strong> 028-2501037<br>
+              <strong>Barua Pepe:</strong> ras@mwanza.go.tz
+            </p>
+            <p>
+              <a href="#" class="text-decoration-none">Mawasiliano Mengine <i class="bi bi-caret-right-fill"
+                  style="font-size: xx-small;"></i></a>
+            </p>
+            <div>
+              <a href="#"><i class="bi bi-facebook fs-2"></i></a>
+              <a href="#"><i class="bi bi-twitter fs-2"></i></a>
+              <a href="#"><i class="bi bi-youtube fs-2"></i></a>
+              <a href="#"><i class="bi bi-discord fs-2"></i></a>
+              <a href="#"><i class="bi bi-instagram fs-2"></i></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="mt-4 text-center">
+      <hr>
+      <p class="small">
+        <a href="#" class="text-decoration-none">Sera ya faragha </a><span class="vr mx-3" style="height: 10px;"></span>
+        <a href="#" class="text-decoration-none">Kanusho </a><span class="vr mx-3" style="height: 10px;"></span>
+        <a href="#" class="text-decoration-none">Ramani ya Tovuti</a>
+      </p>
+      <p class="small">Hakimiliki&copy; 2018. Mkoa wa Mwanza. Haki zote zimehifadhiwa.</p>
+    </footer>
   </div>
 
-  <!-- Footer -->
-  <footer class="mt-4 text-center">
-    <hr>
-    <p class="small">
-      <a href="#" class="text-decoration-none">Sera ya faragha </a><span class="vr mx-3" style="height: 10px;"></span>
-      <a href="#" class="text-decoration-none">Kanusho </a><span class="vr mx-3" style="height: 10px;"></span>
-      <a href="#" class="text-decoration-none">Ramani ya Tovuti</a>
-    </p>
-    <p class="small">Hakimiliki&copy; 2018. Mkoa wa Mwanza. Haki zote zimehifadhiwa.</p>
-  </footer>
-</div>
+  <div class="tertiary"></div>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -691,4 +829,5 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </body>
+
 </html>
